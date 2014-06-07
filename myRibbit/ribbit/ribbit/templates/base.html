@@ -10,10 +10,10 @@
             <!-- <img src="{{ STATIC_URL }}gfx/logo.png"> -->
             <span>shopSEARSly</span>
             {% block login %}
-            <a href="/">Home</a>
-            <a href="/users/">Public Profiles</a>
-            <a href="/users/{{ username }}">My Profile</a>
-            <a href="/ribbits">Public Reviews</a>
+            <span class="spacing"><a href="/">Home</a></span>
+            <span class="spacing"><a href="/users/">Public Profiles</a></span>
+            <span class="spacing"><a href="/users/{{ username }}">My Profile</a></span>
+            <span class="spacing"><a href="/ribbits">Public Reviews</a></span>
             <form action="/logout">
                 <input type="submit" id="btnLogOut" value="Log Out">
             </form>
